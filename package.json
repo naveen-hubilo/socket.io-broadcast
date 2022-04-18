@@ -2,7 +2,6 @@
   "_from": "socket.io-broadcast@4.0.1",
   "_id": "socket.io-broadcast@4.0.1",
   "_inBundle": false,
-  "_integrity": "sha512-g8eZB9lV0f4X4gndG0k7YZAywOg1VxYgCUspS4V+sDqsgI/duqd0AW84pKkbGj/wQwxrqrEq+VZrspRfTbHTAQ==",
   "_location": "/socket.io-broadcast",
   "_phantomChildren": {},
   "_requested": {
@@ -19,13 +18,6 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/socket.io/-/socket.io-4.0.1.tgz",
-  "_shasum": "d2e01cf3780d810b66182b3fbef08a04a4ccf924",
-  "_spec": "socket.io-broadcast@4.0.1",
-  "_where": "/Users/naveensingh/node_code",
-  "bugs": {
-    "url": "https://github.com/socketio/socket.io/issues"
-  },
   "bundleDependencies": false,
   "contributors": [
     {
@@ -95,7 +87,7 @@
     "wrapper.mjs",
     "!**/*.tsbuildinfo"
   ],
-  "homepage": "https://github.com/socketio/socket.io#readme",
+  "homepage": "https://github.com/naveen-hubilo/socket.io-broadcast#readme",
   "keywords": [
     "realtime",
     "framework",
@@ -107,13 +99,13 @@
   ],
   "license": "MIT",
   "main": "./dist/index.js",
-  "name": "socket.io",
+  "name": "socket.io-broadcast",
   "repository": {
     "type": "git",
-    "url": "git://github.com/socketio/socket.io.git"
+    "url": "git@github.com:naveen-hubilo/socket.io-broadcast.git"
   },
   "scripts": {
-    "compile": "rimraf ./dist && tsc",
+    "compile": "tsc",
     "format:check": "prettier --check \"lib/**/*.ts\" \"test/**/*.ts\"",
     "format:fix": "prettier --write \"lib/**/*.ts\" \"test/**/*.ts\"",
     "prepack": "npm run compile",
