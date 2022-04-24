@@ -5694,7 +5694,17 @@ var Decoder = /*#__PURE__*/function (_Emitter) {
           }
         } else {
           // non-binary full packet
-          _get(_getPrototypeOf(Decoder.prototype), "emit", this).call(this, "decoded", packet);
+          // TODO:naveen
+          console.log("5698 pacaket - ", packet);
+          if(packet.data[0]=="batchedBroadcast"){
+            for(var encodedBatchPacket of packet.data[1]){
+              var decodedBatchPacket = this.decodeString(encodedBatchPacket);
+              console.log("5702 decodedBatchPacket - ", decodedBatchPacket);
+              _get(_getPrototypeOf(Decoder.prototype), "emit", this).call(this, "decoded", decodedBatchPacket);
+            }
+          }else{
+            _get(_getPrototypeOf(Decoder.prototype), "emit", this).call(this, "decoded", packet);
+          }
         }
       } else if (is_binary_1.isBinary(obj) || obj.base64) {
         // raw binary data
