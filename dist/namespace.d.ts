@@ -2,7 +2,7 @@ import { Socket } from "./socket";
 import type { Server } from "./index";
 import { EventParams, EventNames, EventsMap, StrictEventEmitter, DefaultEventsMap } from "./typed-events";
 import type { Client } from "./client";
-import type { Adapter, Room, SocketId } from "socket.io-adapter";
+import type { Adapter, Room, SocketId } from "socket.io-adapter-broadcast";
 import { BroadcastOperator, RemoteSocket } from "./broadcast-operator";
 export interface ExtendedError extends Error {
     data?: any;

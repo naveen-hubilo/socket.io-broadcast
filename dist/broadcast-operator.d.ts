@@ -1,6 +1,6 @@
-import type { BroadcastFlags, Room, SocketId } from "socket.io-adapter";
+import type { BroadcastFlags, Room, SocketId } from "socket.io-adapter-broadcast";
 import { Handshake } from "./socket";
-import type { Adapter } from "socket.io-adapter";
+import type { Adapter } from "socket.io-adapter-broadcast";
 import type { EventParams, EventNames, EventsMap, TypedEventBroadcaster } from "./typed-events";
 export declare class BroadcastOperator<EmitEvents extends EventsMap> implements TypedEventBroadcaster<EmitEvents> {
     private readonly adapter;

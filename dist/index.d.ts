@@ -1,7 +1,7 @@
 /// <reference types="node" />
 import http = require("http");
 import { ExtendedError, Namespace, ServerReservedEventsMap } from "./namespace";
-import { Adapter, Room, SocketId } from "socket.io-adapter";
+import { Adapter, Room, SocketId } from "socket.io-adapter-broadcast";
 import * as parser from "socket.io-parser";
 import type { Encoder } from "socket.io-parser";
 import { Socket } from "./socket";

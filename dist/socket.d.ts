@@ -4,7 +4,7 @@ import { EventParams, EventNames, EventsMap, StrictEventEmitter, DefaultEventsMa
 import type { Client } from "./client";
 import type { Namespace } from "./namespace";
 import type { IncomingMessage, IncomingHttpHeaders } from "http";
-import type { Room, SocketId } from "socket.io-adapter";
+import type { Room, SocketId } from "socket.io-adapter-broadcast";
 import type { ParsedUrlQuery } from "querystring";
 import { BroadcastOperator } from "./broadcast-operator";
 export interface SocketReservedEventsMap {
